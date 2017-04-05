@@ -14,3 +14,9 @@ client.connect(hostname=host, username=user, password=password)
 stdin, stdout, stderr = client.exec_command("psql")
 
 print stdout.read()
+
+    #------- DATETIME
+# Attributes: year, month, day, hour, minute, second, microsecond, and tzinfo.
+import datetime
+# PEGA O ANO DA DATA ATUAL
+a = datetime.datetime.today().year
